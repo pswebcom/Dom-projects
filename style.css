@@ -1,16 +1,38 @@
 .output {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 5rem;
 }
 
+.top {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.w3-container {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  width: 60%;
+}
+
 .w3-input {
   border: 1px solid lightgrey;
-  width: 70%;
+  width: 80%;
+  display: inline-block;
 }
 
 .w3-button {
   background-color: darkblue;
   color: #fff;
-  width: 30%;
+  width: 20%;
+  display: inline-block;
+}
+
+li.my-list {
+  border-bottom: none;
+}
+
+.my-list .w3-container {
+  width: 95%;
+  margin: 0 auto;
 }

@@ -7,14 +7,17 @@ const createMyElement = (parent, elType, classAdd) => {
 
 const addNewUser = (userName) => {
   const li = createMyElement(myList, "li", "my-list");
-  li.textContent = userName;
+  const div = createMyElement(li, "div", "w3-container");
+  const span1 = createMyElement(div, "span", "info");
+  span1.textContent = userName;
   return li;
 };
 
 const output = document.querySelector(".output");
-const myInput = createMyElement(output, "input", "w3-input");
+const myTop = createMyElement(output, "div", "top");
+const myInput = createMyElement(myTop, "input", "w3-input");
 myInput.setAttribute("type", "text");
-const myButton = createMyElement(output, "button", "w3-button");
+const myButton = createMyElement(myTop, "button", "w3-button");
 myButton.textContent = "Add new User";
 const myList = createMyElement(output, "ul", "w3-ul");
 
