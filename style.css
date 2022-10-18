@@ -1,0 +1,16 @@
+.output {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.w3-input {
+  border: 1px solid lightgrey;
+  width: 70%;
+}
+
+.w3-button {
+  background-color: darkblue;
+  color: #fff;
+  width: 30%;
+}
