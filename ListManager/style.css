@@ -19,6 +19,7 @@
   border: 1px solid lightgrey;
   width: 80%;
   display: inline-block;
+  margin-bottom: 0.2rem;
 }
 
 .w3-button {
@@ -32,7 +33,37 @@ li.my-list {
   border-bottom: none;
 }
 
+li.my-list:nth-child(odd) {
+  background-color: lightgrey;
+}
 .my-list .w3-container {
   width: 95%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem;
+}
+
+.button-div {
+  width: 16%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-solid {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-trash {
+  color: red;
 }

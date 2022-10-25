@@ -7,9 +7,17 @@ const createMyElement = (parent, elType, classAdd) => {
 
 const addNewUser = (userName) => {
   const li = createMyElement(myList, "li", "my-list");
-  const div = createMyElement(li, "div", "w3-container");
-  const span1 = createMyElement(div, "span", "info");
+  const div = createMyElement(li, "div", "main-div");
+
+  const span1 = createMyElement(div, "span", "span-userName");
   span1.textContent = userName;
+  const div2 = createMyElement(div, "div", "button-div");
+
+  const span2 = createMyElement(div2, "i", "fa-solid");
+  span2.classList.add("fa-pencil");
+  const span3 = createMyElement(div2, "span", "fa-solid");
+  span3.classList.add("fa-trash");
+
   return li;
 };
 
