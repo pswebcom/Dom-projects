@@ -12,11 +12,30 @@ const addNewUser = (userName) => {
   const span1 = createMyElement(div, "span", "span-userName");
   span1.textContent = userName;
   const div2 = createMyElement(div, "div", "button-div");
-
   const span2 = createMyElement(div2, "i", "fa-solid");
   span2.classList.add("fa-pencil");
   const span3 = createMyElement(div2, "span", "fa-solid");
   span3.classList.add("fa-trash");
+
+  span2.addEventListener("click", () => {
+    if (span2.classList.contains("fa-pencil")) {
+      span1.setAttribute("contenteditable", true);
+      span1.style.backgroundColor = "yellow";
+      span1.focus();
+      span2.classList.remove("fa-pencil");
+      span2.classList.add("fa-floppy-disk");
+    } else {
+      span2.classList.remove("fa-floppy-disk");
+      span2.classList.add("fa-pencil");
+      span1.setAttribute("contenteditable", false);
+      span1.style.backgroundColor = "";
+      span1.blur();
+    }
+  });
+
+  span3.addEventListener("click", () => {
+    li.remove();
+  });
 
   return li;
 };

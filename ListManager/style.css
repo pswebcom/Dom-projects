@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .output {
   width: 100%;
   margin: 0 auto;
@@ -10,7 +14,6 @@
 }
 
 .w3-container {
-  border: 1px solid lightgrey;
   padding: 0.5rem;
   width: 60%;
 }
@@ -34,7 +37,11 @@ li.my-list {
 }
 
 li.my-list:nth-child(odd) {
-  background-color: lightgrey;
+  background-color: #f6f6f6;
+}
+
+li.my-list:nth-child(even) {
+  background-color: white;
 }
 .my-list .w3-container {
   width: 95%;
@@ -49,7 +56,6 @@ li.my-list:nth-child(odd) {
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  border-bottom: 1px solid lightgrey;
   padding: 0.5rem;
 }
 
@@ -62,6 +68,10 @@ li.my-list:nth-child(odd) {
 .fa-solid {
   font-size: 20px;
   cursor: pointer;
+}
+
+.fa-pencil {
+  color: green;
 }
 
 .fa-trash {
